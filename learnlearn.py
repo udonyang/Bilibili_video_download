@@ -160,7 +160,9 @@ def down_video(mid, cid, video_list, title, start_url, page, pic_url):
             shutil.copyfile(filename, tmp_video_name)
             if RemoveWatermark(tmp_video_name, tmp_rwm_video_name) == 0:
                 shutil.move(tmp_rwm_video_name, rwm_video_name)
+                os.remove(filename)
             os.remove(tmp_video_name)
+            os.remove(tmp_rwm_video_name)
 
 if __name__ == '__main__':
 
