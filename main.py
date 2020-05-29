@@ -23,8 +23,8 @@ import urllib.request
 imageio.plugins.ffmpeg.download()
 
 USAGE="""
-learnlearn.py fetch <mid csv>
-learnlearn.py pull <fetch info> 
+main.py fetch <mid csv>
+main.py pull <fetch info> 
 """
 
 def RunCmd(cmd):

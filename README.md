@@ -1,4 +1,4 @@
-# BiliBili Video Fetcher
+# Bilibili sucker
 
 # Install
 ## Mac
