@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/local/bin/python3
 # -*- coding:utf-8 -*-
 
 from moviepy.editor import *
@@ -122,7 +122,7 @@ def get_play_list(start_url, cid, quality):
 
 
 def down_video(mid, cid, video_list, title, start_url, page, pic_url):
-    currentVideoPath = os.path.join(sys.path[0], 'bilibili_video', 'up_'+mid.strip())
+    currentVideoPath = os.path.join(os.getcwd(), 'bilibili_video', 'up_'+mid.strip())
     if not os.path.exists(currentVideoPath):
         os.makedirs(currentVideoPath)
     for i in video_list:
@@ -209,7 +209,7 @@ if __name__ == '__main__':
             print('{}: {}'.format(k, len(v)))
             
             def DownloadOneMid(mid, vlist):
-                donefile = open('up.'+str(mid)+'.csv', 'w')
+                # donefile = open('up.'+str(mid)+'.csv', 'w')
                 for i, v in enumerate(vlist):
                     try:
                         def vtoitem(v):
@@ -248,8 +248,8 @@ if __name__ == '__main__':
                             traceback.print_exc()
                             continue
                         row = '{},{},{}\n'.format(item['aid'], item['pic'], item['title'])
-                        donefile.write(row)
-                        donefile.flush()
+                        # donefile.write(row)
+                        # donefile.flush()
                     except Exception as err:
                         print('FATAL: fuck damn {} '.format(k))
                         traceback.print_exc()
