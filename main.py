@@ -242,7 +242,7 @@ if __name__ == '__main__':
                         start_url = start_url + "/?p=" + page
                         video_list = get_play_list(start_url, cid, 32)
                         try:
-                            down_video(mid, cid, video_list, item["title"], start_url, page, item["pic"])
+                            down_video(mid, cid, video_list, '{}.{}'.format(v["created"], item["title"]), start_url, page, item["pic"])
                         except Exception as err:
                             print('FATAL: {}'.format(err))
                             traceback.print_exc()
