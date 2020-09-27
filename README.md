@@ -30,7 +30,10 @@ brew install ffmpeg tesseract
 python3 main.py fetch test.txt
 python3 main.py pull test.txt.json
 ```
-然后，视频就会下载在当前目录，一个叫bilibili_video的文件夹里头，每个up主一个文件夹
+然后，视频就会下载在当前目录，一个叫bilibili_video的文件夹里头，每个up主一个文件夹，执行下面的命令，就能跳到视频所在的文件夹了
+```bash
+explorer.exe .
+```
 
 # 生成文件
 |格式|内容
