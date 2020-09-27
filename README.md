@@ -20,10 +20,7 @@ bash install.sh
 ```
 
 ## Mac
-```bash
-pip3 install -r requirements.txt
-brew install ffmpeg tesseract
-```
+没钱
 
 # 用法
 先编辑一个包含up主id的列表文件，例如叫test.txt，然后执行该两个命令
