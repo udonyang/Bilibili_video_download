@@ -12,7 +12,7 @@
 3. 打开ubuntu，然后走ubuntu的安装流程
 
 ## Ubuntu
-复制下面的命令，执行就ok
+复制下面的命令，执行就ok，install.sh可能会要求输入sudo密码，输入就好了，因为要安装依赖
 ```bash
 git clone https://github.com/udonyang/BilibiliSucker.git --depth=1
 cd BilibiliSucker
