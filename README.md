@@ -23,7 +23,7 @@ bash install.sh
 没钱
 
 # 用法
-先编辑一个包含up主id的列表文件，例如叫test.txt，然后执行该两个命令
+先编辑一个包含up主id的列表文件，例如叫test.txt，一行一个up主，然后执行该两个命令，会以up主为单位进行并发
 ```bash
 python3 main.py fetch test.txt
 python3 main.py pull test.txt.json
