@@ -12,6 +12,7 @@
 3. 打开ubuntu，然后走ubuntu的安装流程
 
 ## Ubuntu
+复制下面的命令，执行就ok
 ```bash
 git clone https://github.com/udonyang/BilibiliSucker.git --depth=1
 cd BilibiliSucker
