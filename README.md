@@ -32,6 +32,7 @@ python3 main.py pull test.txt.json
 ```bash
 explorer.exe .
 ```
+中断程序执行，可以用Ctrl+C
 
 # 生成文件
 |格式|内容
