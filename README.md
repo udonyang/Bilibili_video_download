@@ -40,4 +40,4 @@ explorer.exe .
 |mp4|骑兵
 |flv|步兵
 |bmp|调试文件
-|jpg|视频的封面
+|jpg|封面
