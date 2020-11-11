@@ -3,9 +3,9 @@
 
 function install()
 {
-  if [[ ! -f ${bak} ]]; then
-    sudo cp -bf conf/sources.list /etc/apt/
-  fi
+  #if [[ ! -f ${bak} ]]; then
+  #  sudo cp -bf conf/sources.list /etc/apt/
+  #fi
   sudo apt update
   sudo apt install -y python3 python3-pip ffmpeg tesseract-ocr libtesseract-dev
   pip3 install -r conf/requirements.txt
