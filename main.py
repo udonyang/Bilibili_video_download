@@ -23,8 +23,10 @@ import urllib.request
 imageio.plugins.ffmpeg.download()
 
 USAGE="""
-main.py fetch <mid csv>
-main.py pull <fetch info> 
+{0} status
+{0} kill
+{0} fetch <mid csv>
+{0} pull <fetch info>
 """
 
 def RunCmd(cmd):
@@ -171,11 +173,17 @@ if __name__ == '__main__':
     }
 
     if len(sys.argv) < 2:
-        print(USAGE)
+        print(USAGE.format(sys.argv[0]))
         exit(-2)
 
     cmd = sys.argv[1]
-    if cmd == 'fetch':
+    if cmd == 'status':
+        os.system('ps aux | grep {}'.format(sys.argv[0]))
+
+    elif cmd == 'kill':
+        os.system("ps aux | grep %s | awk '{print $2}' | xargs kill -9"%sys.argv[0])
+
+    elif cmd == 'fetch':
         middb = {}
 
         ups = open(sys.argv[2], 'r').readlines()
@@ -264,4 +272,4 @@ if __name__ == '__main__':
                     time.sleep(1)
 
     else:
-        print(USAGE)
+        print(USAGE.format(sys.argv[0]))
